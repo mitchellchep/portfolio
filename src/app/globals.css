@@ -7,15 +7,99 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {  
+  font-family: 'Georgia', serif;
+  background-color: #fdf7f2;
+  color: #000;
+  background-image: url(dotted-downlod.png) ;
+
+  align-items: center;
+  justify-content: center;
+  margin-top: 26;
+  margin-left: 20;
+  margin-right: 20;  
+  border: 1px solid #000; 
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column; 
+  border-radius: 10px 15px 20px 25px; 
+
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  text-align: center;
+  margin-top: 10;
+  margin-left: 50;
+ 
+   
 }
+
+.content {
+  margin: 150 auto;
+    margin-left: 250;
+    
+
+}
+
+.name {
+  text-align: left; 
+  margin: 0; 
+  padding: 0; 
+  text-indent: 0; 
+  font-size: 7rem;
+  font-weight: 300;
+  line-height: 0.9; 
+  margin-left: 350; 
+
+}
+
+.description {
+  font-size: 1rem;
+  text-align: left;
+  margin: 1rem 0;
+  margin-left: 350;
+  color: #666;
+}
+
+.social-links {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  margin-left: 350;
+
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+  margin-right: 120;
+
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+  font-family: monospace;
+}
+
+
+
